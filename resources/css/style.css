@@ -1,0 +1,139 @@
+html {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0rem;
+}
+
+.flex {
+  display: flex;
+}
+
+/*borders for identifying objects*/
+div, nav, header .container .container2 {
+  border: 1px solid gray;
+}
+
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  margin: auto;
+}
+
+div {
+  display: flex;
+  align-items: center;
+}
+
+.container div {
+  width: 50%;
+}
+
+.container div span {
+  color: white;
+}
+
+div img {
+  margin: 0rem 1rem 0rem 2rem;
+}
+
+header .container {
+  background-color: cadetblue;
+}
+
+header {
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+nav.container {
+  margin-top: 1rem;
+}
+
+ul {
+  margin: 0rem;
+  list-style: none;
+  display: inline-block;
+}
+
+.container ul {
+  align-items: center;
+  line-height: 1rem;
+  margin: 0rem;
+}
+
+.container .menu {
+  height: 1.5rem;
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0rem 2rem 0rem 0rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+header img {
+  height: 1.5rem;
+  display: inline-block;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 55.3333333rem;
+  align-items: center;
+  height: 27rem;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.main-banner {
+  background: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10.5rem;
+}
+
+.main-banner h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.container3 {
+  width: 100%;
+  margin-top: 3rem;
+  justify-content: center;
+}
