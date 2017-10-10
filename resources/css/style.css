@@ -92,12 +92,12 @@ ul {
   width: 50%;
 }
 
-.menu li {
+.menu li, .small-menu li{
   display: inline-block;
   padding: 0rem 2rem 0rem 0rem;
 }
 
-.menu a {
+.menu a, .small-menu a {
   text-decoration: none;
   color: white;
 }
@@ -225,4 +225,179 @@ footer span {
 }
 
 /*trying one more time*/
-/*@media only screen and (max-width: 560px)*/
+@media only screen and (max-width: 970px) {
+  nav.container {
+    margin-top: 0rem;
+    margin: 0rem 0rem;
+    width: 100%;
+  }
+
+  header {
+    background-image: url(../images/glasses-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 30%;
+    height: 22rem;
+  }
+
+  .main-banner {
+    padding: .75rem 4rem;
+    margin: 5rem 2rem 11.75rem 0rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
+
+  .menu li {
+    padding: 0rem 1rem 0rem 0rem;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .small-menu {
+    display: none;
+  }
+
+  nav  {
+    padding: .75rem 0rem;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .menu {
+    display: none;
+    width: 0%;
+  }
+
+  .menu ul {
+    display: none;
+    width: 0%;
+  }
+
+  .container .menu {
+    width: 0rem;
+  }
+
+  .container .small-menu {
+    height: 1.5rem;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    width: 25%;
+  }
+
+  nav  {
+    padding: .75rem 0rem;
+  }
+
+  .container div {
+    width: 75%;
+  }
+
+  .all-services {
+    justify-content: center;
+  }
+
+  .service {
+    margin: 0rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info-box {
+    width: 100%;
+    margin: 0rem 0rem 4rem 0rem;
+  }
+
+  .info-box h5 {
+    width: 100%;
+    text-align: center;
+    padding: .5rem 0rem;
+  }
+
+  .info-box p {
+    padding: .25rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menu ul {
+    display: none;
+  }
+
+  .small-menu {
+    display: flex;
+  }
+
+  .container div span {
+    display: none;
+  }
+
+  nav  {
+    padding: 1rem 0rem;
+  }
+
+
+  header {
+    background-image: url(../images/glasses-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 1rem 0rem;
+    margin: 9rem 0rem 2rem 0rem;
+    justify-content: center;
+    line-height: 1rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .all-services {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service {
+    margin: 0rem 6rem 1.54rem 6rem;
+  }
+
+  .container3 {
+    margin-top: 3.77rem;
+  }
+
+  .service span {
+    font-size: .77rem;
+    line-height: 1rem;
+  }
+
+  footer .container {
+    justify-content: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    padding: 0rem;
+    margin: 0rem;
+  }
+}
