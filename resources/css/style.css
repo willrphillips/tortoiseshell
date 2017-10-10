@@ -222,5 +222,5 @@ footer span {
   text-align: left;
 }
 
-
+/*CSS never updates through bash correctly*/
 /*@media only screen and (max-width: 560px)*/
