@@ -12,11 +12,11 @@ body {
   display: flex;
 }
 
-/*borders for identifying objects*/
+/*borders for identifying objects
 div, nav, header .container .container2 {
   border: 1px solid gray;
 }
-
+*/
 
 .container {
   max-width: 960px;
@@ -134,6 +134,93 @@ header .flex {
 
 .container3 {
   width: 100%;
-  margin-top: 3rem;
+  margin: 3rem 0rem;
   justify-content: center;
 }
+
+.all-services {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  justify-content: center;
+}
+
+.service {
+  margin: 0px 3rem;
+  justify-content: space-between;;
+  flex-direction: column;
+  height: 8rem;
+}
+
+.service.paper {
+  width: 5rem;
+  text-align: center;
+}
+
+.service.paper img {
+  width: 3.5rem;
+}
+
+.service.ruler img, .service.truck img {
+  width: 5rem;
+}
+
+.service img {
+  width: 95%;
+  margin: 0rem;
+}
+
+.service span {
+  text-align: center;
+}
+
+
+.info {
+  justify-content: center;
+  width: 100%;
+  max-width: 960px;
+  align-items: flex-start;
+}
+
+.info-box {
+  flex-direction: column;
+  width: 35%;
+  text-align: left;
+  align-items: baseline;
+  margin: 0rem 2.5%;
+}
+
+.info-box h5 {
+  color: white;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 10rem;
+  padding: .5rem 0rem .5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.info-box p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+footer .container {
+  margin-top: 5rem;
+  background-color: azure;
+  height: 9.5rem;
+  justify-content: flex-start;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 0rem 1rem 0rem 4rem;
+}
+
+footer span {
+  text-align: left;
+}
+
+
+/*@media only screen and (max-width: 560px)*/
